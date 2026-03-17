@@ -1,0 +1,11 @@
+[book]
+title = "职场沟通与人际关系方法论：从情商到领导力"
+author = "Claude Code"
+description = "从职场沟通的底层逻辑出发，提炼出一套可在生活中直接应用的情商管理和人际关系方法论"
+language = "zh"
+
+[build]
+build-dir = "book"
+
+[output.html]
+theme = "default"
