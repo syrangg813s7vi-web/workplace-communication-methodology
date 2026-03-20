@@ -5,8 +5,7 @@ description = "基于 269 份真实职场材料的深度方法论。揭示职场
 language = "zh"
 
 [build]
-build-dir = "book"
+build-dir = "../../docs/sonnet"
 
 [output.html]
-theme = "default"
 curly-quotes = true

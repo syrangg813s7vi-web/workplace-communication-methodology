@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第13章：内核稳定——不被情绪绑架的底层密码 - 职场沟通的底层逻辑</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="30年HR大高管的沟通方法论——从原始材料萃取的职场生存智慧">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../前言.html">前言</a></li><li class="chapter-item expanded affix "><li class="part-title">第一部分：底层心态——沟通的地基</li><li class="chapter-item expanded "><a href="../part1_世界观/01_我行你也行.html"><strong aria-hidden="true">1.</strong> 第1章：我行，你也行——平等心态是一切沟通的起点</a></li><li class="chapter-item expanded "><a href="../part1_世界观/02_三种沟通状态.html"><strong aria-hidden="true">2.</strong> 第2章：三种沟通状态——你现在处于哪种状态？</a></li><li class="chapter-item expanded "><a href="../part1_世界观/03_互赖共生.html"><strong aria-hidden="true">3.</strong> 第3章：成功的终点不是独立，而是互赖</a></li><li class="chapter-item expanded affix "><li class="part-title">第二部分：听懂与被听见</li><li class="chapter-item expanded "><a href="../part2_框架方法论/03_倾听的四个层级.html"><strong aria-hidden="true">4.</strong> 第4章：倾听的四个层级——从耳朵听到心里</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/04_探索隐性需求.html"><strong aria-hidden="true">5.</strong> 第5章：他要的不是他说的那个——探索隐性需求</a></li><li class="chapter-item expanded affix "><li class="part-title">第三部分：高效表达的方法论</li><li class="chapter-item expanded "><a href="../part2_框架方法论/05_不卑不亢.html"><strong aria-hidden="true">6.</strong> 第6章：不卑不亢——有底线的平等沟通</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/07_四个F框架.html"><strong aria-hidden="true">7.</strong> 第7章：四个F框架——让每次表达都有力量</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/12_MBTI沟通密码.html"><strong aria-hidden="true">8.</strong> 第8章：MBTI沟通密码——读懂个性差异，解锁高效协作</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/09_教科书式求助.html"><strong aria-hidden="true">9.</strong> 第9章：教科书式求助——如何让别人心甘情愿帮你</a></li><li class="chapter-item expanded affix "><li class="part-title">第四部分：影响力与关系经营</li><li class="chapter-item expanded "><a href="../part2_框架方法论/06_分享信用.html"><strong aria-hidden="true">10.</strong> 第10章：Share Credibility——让个人成功变成集体荣耀</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/13_心理契约与人脉经营.html"><strong aria-hidden="true">11.</strong> 第11章：心理契约与人脉经营——关系的隐形规则</a></li><li class="chapter-item expanded affix "><li class="part-title">第五部分：领导力与情商</li><li class="chapter-item expanded "><a href="../part2_框架方法论/07_领导力情商.html"><strong aria-hidden="true">12.</strong> 第12章：情商不是天生的，是练出来的</a></li><li class="chapter-item expanded "><a href="../part3_领导力情商/13_内核稳定.html" class="active"><strong aria-hidden="true">13.</strong> 第13章：内核稳定——不被情绪绑架的底层密码</a></li><li class="chapter-item expanded "><a href="../part3_领导力情商/14_压力管理.html"><strong aria-hidden="true">14.</strong> 第14章：压力管理——扛压与回弹的艺术</a></li><li class="chapter-item expanded affix "><li class="part-title">第六部分：职场必修课</li><li class="chapter-item expanded "><a href="../part2_框架方法论/08_价值观落地.html"><strong aria-hidden="true">15.</strong> 第15章：价值观落地——让原则变成每天的行为</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/09_危机公关四步法.html"><strong aria-hidden="true">16.</strong> 第16章：危机公关的底层逻辑</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/10_面试的双向选择.html"><strong aria-hidden="true">17.</strong> 第17章：面试是双向的——HR视角的底层逻辑</a></li><li class="chapter-item expanded "><a href="../part2_框架方法论/11_职业重组.html"><strong aria-hidden="true">18.</strong> 第18章：职业重组——转型不是从零开始</a></li><li class="chapter-item expanded affix "><li class="part-title">第七部分：团队与组织</li><li class="chapter-item expanded "><a href="../part4_团队与组织/19_团队管理.html"><strong aria-hidden="true">19.</strong> 第19章：团队管理——从个人高手到团队领导者</a></li><li class="chapter-item expanded affix "><li class="part-title">附录一：案例库</li><li class="chapter-item expanded "><a href="../part3_案例库/案例库.html"><strong aria-hidden="true">20.</strong> 案例库——所有真实案例索引</a></li><li class="chapter-item expanded affix "><li class="part-title">附录二：系统地图</li><li class="chapter-item expanded "><a href="../part4_系统地图/系统地图.html"><strong aria-hidden="true">21.</strong> 系统地图：你的职场沟通操作系统</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">职场沟通的底层逻辑</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第十三章内核稳定不被外部声音定义的人才有真正的力量"><a class="header" href="#第十三章内核稳定不被外部声音定义的人才有真正的力量">第十三章：内核稳定——不被外部声音定义的人，才有真正的力量</a></h1>
+<blockquote>
+<p><strong>"真正的强大，不是刀枪不入，而是被刺中之后，你知道自己依然是谁。"</strong></p>
+</blockquote>
+<hr />
+<p>职场中有一种人，开会被领导当众否定，脸红了，但散会之后照常做事；有一种人，方案被客户退回，沉默片刻，然后打开电脑重新来过；还有一种人，连续三个月没有被夸过，但每天早上依然准时坐在工位上，全力以赴。</p>
+<p>这三种人，拥有同一种东西：<strong>内核稳定</strong>。</p>
+<p>而与之相反的人，你也见过——被夸了就飘，被批了就垮；领导一皱眉，立刻怀疑自己做错了；项目没做好，脑子里响起的第一句话是"我是不是真的不行"。</p>
+<p>内核不稳定，不是性格软弱，而是<strong>自我价值的来源出了问题</strong>。</p>
+<hr />
+<h2 id="一什么是内核稳定"><a class="header" href="#一什么是内核稳定">一、什么是内核稳定？</a></h2>
+<p>内核稳定，指的是一个人内心深处有一套稳固的自我支撑系统，使他在外部环境变化时——无论是批评、夸奖、压力还是失败——都不会从根本上动摇对自身价值的认定。</p>
+<p>这套系统由四根柱子构成：</p>
+<div class="table-wrapper"><table><thead><tr><th>支柱</th><th>含义</th><th>例子</th></tr></thead><tbody>
+<tr><td><strong>价值观</strong></td><td>你真正相信的事</td><td>"我相信诚实比讨好更重要"</td></tr>
+<tr><td><strong>愿景</strong></td><td>你知道自己在走向哪里</td><td>"五年后我要在这个领域有所建树"</td></tr>
+<tr><td><strong>原则</strong></td><td>不可妥协的行为底线</td><td>"我不会为了通过考核而造假数据"</td></tr>
+<tr><td><strong>情绪管理</strong></td><td>感受情绪而不被情绪控制</td><td>"我知道我现在很沮丧，但这不是事实的全部"</td></tr>
+</tbody></table>
+</div>
+<p>这四根柱子合在一起，构成一个人面对世界时的<strong>重心</strong>。重心在自己身上，外部的风再大，也只是晃了一下；重心在别人身上，一个眼神就能让你失去方向。</p>
+<hr />
+<h2 id="二为什么大多数人的内核不稳定"><a class="header" href="#二为什么大多数人的内核不稳定">二、为什么大多数人的内核不稳定？</a></h2>
+<p>这不是性格问题，而是<strong>成长环境塑造的结果</strong>。</p>
+<p>大多数人从小被培养出一种条件反射：做对了有奖励，做错了有惩罚。成绩好，父母高兴；成绩差，父母失望。久而久之，我们学会了用<strong>外部反应</strong>来判断自己的价值——"别人高兴，说明我做对了；别人不满，说明我有问题。"</p>
+<p>这套逻辑带进职场，就会产生三种典型的不稳定模式：</p>
+<p><strong>1. 表扬依赖型</strong>
+平时默默无闻，但只要领导夸一句，精神立刻大振，干劲十足。问题是，一旦夸奖停止，动力也随之消失，甚至开始怀疑自己是不是不受重视了。</p>
+<p><strong>2. 批评崩溃型</strong>
+工作能力其实不差，但特别怕被批评。一旦被指出问题，第一反应不是"这个反馈有用吗"，而是"他是不是觉得我很差"，"我是不是不适合做这个"。</p>
+<p><strong>3. 身份捆绑型</strong>
+把职位、头衔、项目结果与自我价值深度绑定。"我主导的项目失败了"变成"我失败了"。"我被降职了"变成"我这个人不行了"。一件事的结果，变成了对整个人的定义。</p>
+<p>归根到底，这三种模式都源于同一个错误：<strong>把"我做了什么"等同于"我是谁"</strong>。</p>
+<hr />
+<h2 id="三谷爱凌的内核失败之后她说了什么"><a class="header" href="#三谷爱凌的内核失败之后她说了什么">三、谷爱凌的内核——失败之后，她说了什么</a></h2>
+<p>2022年北京冬奥会，谷爱凌在自由式滑雪大跳台决赛中，第二跳出现失误，分数明显落后。</p>
+<p>很多观众捏了一把汗。</p>
+<p>但她赛后采访时说的话，让很多人印象深刻：<strong>"我已经拿了五块金牌了，这一次的失误不会改变我是谁。"</strong></p>
+<p>注意这句话的结构——她没有说"没关系，下次再来"（这是安慰自己），也没有说"我已经很努力了"（这是辩护自己）。她说的是：<strong>这件事的结果，不定义我这个人。</strong></p>
+<p>这就是内核稳定的典型表达。</p>
+<p>她的稳定感来自哪里？来自长期积累的<strong>真实记录</strong>——不是别人的评价，而是她自己切切实实完成的事情。五块金牌是她的，那份记录在那里，任何一次失误都无法抹去。</p>
+<p>这给了我们一个重要启示：内核稳定不是靠"想开了"或"不在乎"建立的，而是靠<strong>真实的成就积累</strong>和<strong>清醒的自我认知</strong>建立的。</p>
+<hr />
+<h2 id="四领导者的位置权力幻觉"><a class="header" href="#四领导者的位置权力幻觉">四、领导者的位置权力幻觉</a></h2>
+<p>内核不稳定，在职场中有一种特别具有迷惑性的变体——<strong>以强硬掩盖空洞</strong>。</p>
+<p>你可能见过这类领导：威权十足，容不得任何质疑，下属提出不同意见立刻被压制。表面上看，他非常强势，内核很稳。但仔细观察，你会发现：他的"稳定"完全依赖于<strong>职位权力</strong>——只要他还是领导，他就觉得自己是对的。一旦有人绕过他、否定他，他就立刻失控。</p>
+<p>这不是内核稳定，这是<strong>位置权力幻觉</strong>。</p>
+<p>真正内核稳定的领导，在被质疑时不会暴怒，因为他清楚：<strong>质疑的是我的判断，不是我这个人</strong>。他可以说"你的观点很有意思，但我认为……"，而不是"你在质疑我的权威？"</p>
+<p>位置权力是外挂的，随时可能消失；而内核稳定，是卸下头衔之后，你依然知道自己是谁。</p>
+<hr />
+<h2 id="五如何建立内核稳定四个可操作的方法"><a class="header" href="#五如何建立内核稳定四个可操作的方法">五、如何建立内核稳定：四个可操作的方法</a></h2>
+<p>内核稳定不是天生的，是可以刻意训练的。以下是四个具体方法：</p>
+<h3 id="方法一每日自我认可日记"><a class="header" href="#方法一每日自我认可日记">方法一：每日自我认可日记</a></h3>
+<p>每天结束时，写下<strong>三件你今天做得好的事</strong>，不论大小。可以是"今天开会我主动说出了自己的想法"，也可以是"我准时完成了一个很难的任务"。每天早上起来，把前一天写的内容读一遍。</p>
+<p>这个练习的核心不是"积极心理暗示"，而是<strong>训练大脑从内部寻找价值依据</strong>，而不是等待外部评价。</p>
+<h3 id="方法二建立成就档案"><a class="header" href="#方法二建立成就档案">方法二：建立成就档案</a></h3>
+<p>创建一个文档，持续记录你<strong>真实完成的重要事项</strong>——解决过的难题、带领过的项目、给同事或客户带来的帮助。当你被批评、被质疑、情绪低落时，打开这个文档看一眼。</p>
+<p>这不是自我安慰，而是<strong>用事实对抗情绪扭曲的认知</strong>。</p>
+<h3 id="方法三把反馈和自我价值分开"><a class="header" href="#方法三把反馈和自我价值分开">方法三：把反馈和自我价值分开</a></h3>
+<p>当你收到批评时，练习这样处理：先在脑子里把这句话翻译一遍——"这个反馈说的是我的<strong>工作</strong>，不是我这个<strong>人</strong>。"</p>
+<p>具体做法：拿一张纸，左边写"对方说了什么"，右边写"这条反馈对我的工作有什么参考价值"。注意右边的问题——不是"这说明我怎么样"，而是"这对我的<strong>工作</strong>有什么用"。</p>
+<h3 id="方法四明确你的价值观"><a class="header" href="#方法四明确你的价值观">方法四：明确你的价值观</a></h3>
+<p>问自己一个问题：<strong>什么事情，即使没有人知道、没有人夸奖，你也会坚持去做？</strong></p>
+<p>你的答案，就是你真实的价值观。把它写下来，放在容易看到的地方。每次你感到迷失或被外部声音淹没时，回来看这个清单。</p>
+<hr />
+<h2 id="在你的职场中"><a class="header" href="#在你的职场中">在你的职场中</a></h2>
+<p><strong>本章行动练习：</strong></p>
+<ol>
+<li><strong>这周开始，每晚花3分钟</strong>，写下今天你做得好的三件事（不能重复，必须是具体行为，不是性格描述）。</li>
+<li><strong>创建你的成就档案</strong>，从现在回溯，写下过去一年中你认为自己做得真正有价值的五件事。</li>
+<li><strong>下次收到批评时</strong>，用两列纸的方式处理：左边是"对方说了什么"，右边是"这对我的工作有什么参考价值"——不允许出现"这说明我不行"这类句子。</li>
+</ol>
+<blockquote>
+<p><strong>核心提醒</strong>：你的价值不在别人的嘴里，也不在项目的成败里。它在你积累的判断力、行动力和对自己诚实的程度里。</p>
+</blockquote>
+<hr />
+<p><strong>下一章预告：</strong> 当内核稳定了，你就能更冷静地面对压力。但压力本身仍然存在——工作的高强度、意外的变数、无法控制的局面。下一章，我们来谈<strong>如何管理压力</strong>，以及真正的韧性是如何炼成的。</p>
+<hr />
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../part2_框架方法论/07_领导力情商.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../part3_领导力情商/14_压力管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../part2_框架方法论/07_领导力情商.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../part3_领导力情商/14_压力管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

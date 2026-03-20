@@ -1,0 +1,12 @@
+[book]
+title = "职场沟通的底层逻辑"
+description = "30年HR大高管的沟通方法论——从原始材料萃取的职场生存智慧"
+authors = ["AILV大高管"]
+language = "zh"
+src = "src"
+
+[build]
+build-dir = "../../docs/wisdom"
+
+[output.html]
+default-theme = "light"

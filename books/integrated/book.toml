@@ -1,0 +1,13 @@
+[book]
+title = "职场沟通方法论：精华版"
+description = "融合三版精华，基于269份真实职场材料。从底层认知到持续影响力的完整体系。"
+authors = ["Claude Code (三版精华整合)"]
+language = "zh"
+src = "src"
+
+[build]
+build-dir = "../../docs/integrated"
+
+[output.html]
+smart-punctuation = true
+default-theme = "light"
