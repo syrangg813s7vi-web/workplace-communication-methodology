@@ -6,7 +6,7 @@ language = "zh"
 src = "src"
 
 [build]
-build-dir = "../../docs/integrated"
+build-dir = "docs"
 
 [output.html]
 smart-punctuation = true

@@ -26,12 +26,8 @@ jobs:
         with:
           mdbook-version: 'latest'
 
-      - name: Build all books
-        run: |
-          mdbook build books/sonnet
-          mdbook build books/wisdom
-          mdbook build books/haiku
-          mdbook build books/integrated
+      - name: Build book
+        run: mdbook build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
