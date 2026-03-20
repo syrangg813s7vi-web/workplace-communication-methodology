@@ -31,6 +31,7 @@ jobs:
           mdbook build books/sonnet
           mdbook build books/wisdom
           mdbook build books/haiku
+          mdbook build books/integrated
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
